@@ -61,8 +61,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Caption:</p>
-                    <div class="form-floating">
+                    aption:<                    <div class="form-floating">
                         <textarea class="form-control" placeholder="Add the caption of your post here"
                             id="floatingTextarea"></textarea>
                         <label for="floatingTextarea">Add the caption of your post here</label>
@@ -91,13 +90,53 @@
             </div>
         </div>
     </div>
-    <!--IG Feed needs 2 views-->
+
 
     <!-- Pills for Toggling-->
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+        </li>
 
-    <!-- View 1 0- Grid (Pictures Only)-->
+    </ul>
+    <!--IG Feed needs 2 views-->
+    <div class="tab-content" id="pills-tabContent">
+        <!-- View 1 0- Grid (Pictures Only)-->
+         
+        <div class= "tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="row justify-content-center">
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+            </div>  
 
-    <!-- View 2 - Feed (cards with header, image, likes, and sumnmary)-->
+            <div class="row justify-content-center">
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+            </div>  
+            <div class="row justify-content-center">
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+                <div class="col-3 g-0"><img class="w-100" src="https://picsum.photos/200"></div>
+            </div>  
+
+
+
+        </div>
+
+        <!-- View 2 - Feed (cards with header, image, likes, and sumnmary)-->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        </div>
+    </div>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
